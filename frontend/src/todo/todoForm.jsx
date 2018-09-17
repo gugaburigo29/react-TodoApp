@@ -1,16 +1,20 @@
 import React from 'react'
+import Grid from '../template/grid'
+import IconButton from '../template/iconButton'
 
 export default props => (
-    <div>
-        <div role='form' className='todoForm row'>
-            <div className='col-10'>
-                <input id='description' className='form-control' type="text" placeholder='description'/>
-            </div>
-            <div className='col-2'>
-                <button className='btn btn-primary'>
-                    <i className='fa fa-plus'></i>
-                </button>
-            </div>
-        </div>
+    <div className="row">
+        <Grid cols="12 9 10">
+            <input id="description"
+                   className="form-control"
+                   type="text"
+                   placeholder="description"
+                   onChange={props.handleChange}
+                   value={props.description}/>
+        </Grid>
+        <Grid cols="12 3 2">
+            <IconButton style="primary" icon="plus"
+                        onClick={props.handleAdd}/>
+        </Grid>
     </div>
 )
