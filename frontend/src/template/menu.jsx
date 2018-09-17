@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default props => (
-    <nav className="navbar navbar-inverse bg-inverse">
+    <nav className="navbar navbar-inverse bg-dark">
         <div className="navbar-brand mb-0 h1">
             <i className='fa fa-calendar-check-o'/> TodoApp
         </div>
