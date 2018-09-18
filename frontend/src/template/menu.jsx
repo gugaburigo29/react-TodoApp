@@ -2,7 +2,7 @@ import React from 'react'
 
 export default props => (
     <nav className="navbar navbar-inverse bg-dark">
-        <div className="navbar-brand mb-0 h1">
+        <div className="navbar-brand mb-0 h1 text-light">
             <i className='fa fa-calendar-check-o'/> TodoApp
         </div>
 
